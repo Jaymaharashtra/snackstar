@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:ital,wght@0,300;0,400;0,600;1,400&family=Prompt:wght@500&family=Roboto:wght@300;400&display=swap');
+:root{
+    --mainColor : rgb(233, 1, 59);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-family: Poppins;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
