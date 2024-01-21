@@ -1,0 +1,77 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0rem;
+    
+}
+
+li a{
+    height: 22.5rem;
+    width: 18rem;
+    border: 1px solid rgb(216, 204, 204);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: var(--mainColor);
+    
+}
+li a:hover{
+    opacity: 0.9;  
+}
+
+li a img{
+    object-fit: cover;
+    height: 15.5rem;
+}
+ 
+.content{
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+}
+.fav-heart{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 1.5rem;
+}
+.fav-heart.not{
+    color: gray;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+
+}
+.origins span{
+    color: grey;
+    background-color: rgb(228, 232, 235);
+    border-radius: 5px ;
+    margin-right: 0.5rem;
+    padding: 2px;
+}
+
+.cook-time span{
+    margin-right: 0.5rem;
+}
+
+.price{
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    color: rgb(141, 137, 133);
+}
+
+app-search{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

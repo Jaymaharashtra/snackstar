@@ -1,1 +1,23 @@
-<p>home works!</p>
+
+<app-search></app-search>
+<app-tags></app-tags>
+<ul>
+  <li *ngFor="let item of food">
+    <a routerLink="food/{{ item.id }}">
+      <img [src]="item.imageUrl" [alt]="item.name" />
+      <div class="content">
+        <div class="name">
+          {{ item.name }}
+          <span class="fav-heart {{ item.favorite ? '' : 'not' }}">❤</span>
+        </div>
+        <div class="details">
+          <div class="origins">
+            <span *ngFor="let origin of item.origins"> {{ origin }}</span>
+          </div>
+          <div class="cook-time"><span>🕒</span>{{ item.cooktime }}</div>
+        </div>
+        <div class="price">{{ item.Price | currency : "INR" : "symbol" }}</div>
+      </div>
+    </a>
+  </li>
+</ul>

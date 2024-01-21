@@ -1,0 +1,22 @@
+input{
+    border: 1px solid var(--mainColor);
+    border-radius: 50px 0px 0px 50px;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+}
+
+button{
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    border: 1px solid var(--mainColor);;
+    border-radius: 0px 50px 50px 0px;
+    background-color: var(--mainColor);
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover{
+    color: var(--mainColor);
+    background-color: white;
+    cursor: pointer;
+}
